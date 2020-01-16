@@ -31,7 +31,7 @@ class GoogleSafeBrowsing
 
         $matches = $response->getContent();
         if (!array_key_exists('matches', $matches)) {
-            return null;
+            return [];
         }
         return array_map(function ($match) {
             return $match['threat']['url'];
