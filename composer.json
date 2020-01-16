@@ -1,6 +1,6 @@
 {
-  "name": "zver/alexarank",
-  "description": "alexarank wrapper",
+  "name": "zver/site-analyzer",
+  "description": "some services to analyze site",
   "minimum-stability": "stable",
   "config": {
     "optimize-autoloader": true
@@ -19,7 +19,7 @@
     }
   },
   "require": {
-    "zver/curl": "^1.0"
+    "zver/curl": "^1.0.1"
   },
   "require-dev": {
   }
