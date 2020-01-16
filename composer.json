@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "description": "",
+  "name": "zver/alexarank",
+  "description": "alexarank wrapper",
   "minimum-stability": "stable",
   "config": {
     "optimize-autoloader": true
@@ -19,6 +19,7 @@
     }
   },
   "require": {
+    "zver/curl": "^1.0"
   },
   "require-dev": {
   }
