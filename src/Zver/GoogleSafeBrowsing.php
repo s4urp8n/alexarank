@@ -23,9 +23,15 @@ class GoogleSafeBrowsing
             ],
         ];
 
-        $matches = Curl::json($url, $data)->getContent();
+        $response = Curl::json($url, $data);
+
+        if ($response->getResponseCode() != 200) {
+            return null;
+        }
+
+        $matches = $response->getContent();
         if (!array_key_exists('matches', $matches)) {
-            return [];
+            return null;
         }
         return array_map(function ($match) {
             return $match['threat']['url'];
